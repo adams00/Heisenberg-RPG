@@ -6,8 +6,8 @@ var seeTab = [];
 
 function createSeeTab() {
   var counter = 0;
-  for (var y = hero[1] - 2; y <= hero[1] + 2; y++) {
-    for (var x = hero[0] - 2; x <= hero[0] + 2; x++) {
+  for (let y = hero[1] - 2; y <= hero[1] + 2; y++) {
+    for (let x = hero[0] - 2; x <= hero[0] + 2; x++) {
       if (x < 15 && x > 0) {
         seeTab[counter] = generalTab[(y - 1) * szer + (x - 1)];
         counter++;
@@ -257,7 +257,7 @@ function createGenXY() {
   }
 }
 function execute() {
-  for (i = 0; i < 25; i++) {
+  for (let i = 0; i < 25; i++) {
     var td = document.getElementsByTagName("td")[i]; ///To nie tak ma być
     if (seeTab[i] == undefined) {
       td.setAttribute("background", "#AD58FF.png");
@@ -315,8 +315,8 @@ function upArrowPressed() {
 
 function validate([x, y]) {
   /*if  ( (hero[0]+ x > 0) && (hero[1] + y > 0) && (hero[0]+x < najw(0)) && (hero[1] + y < najw(1))  ){*/ //Jeśli  nie wychodzi poza planszę to:
-  var a = hero[0] + x;
-  var b = hero[1] + y;
+  let a = hero[0] + x;
+  let b = hero[1] + y;
   if (
     generalTab[(b - 1) * szer + (a - 1)] != "rock" &&
     generalTab[(b - 1) * szer + (a - 1)] != "water"
