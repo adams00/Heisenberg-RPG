@@ -1,5 +1,6 @@
-﻿[**Heisenberg-RPG**](https://adams00.github.io/Heisenberg-RPG/)
+﻿*Heisenberg-RPG*
 
-
-To moje ulubione dzieło.Gra podobne jak "Iron Pizza" jest oparta na tabeli.Wykorzystuje zmianę backgroundu pól do wyświetnania mapy.Gracz widzi tylko wycinek mapy 5x5.Zadaniem gracza jest zebranie wszystkich 95 sztabek złota.
-Po zebraniu wszystkich sztabek można dalej eksplorować świat ;-)
+It's a game with an unusual approach to display graphics.
+It uses changing cell backgrounds to display player move.
+Player walks through map and picks gold. When he picks all 95 of them, he'll win.
+When you do so you can still explore map
